@@ -59,7 +59,7 @@ footer { font-family: var(--sans); color: var(--muted); font-size: .82rem; margi
 <div class="tbl"><table>
 <tr><th>Item</th><th>Choice</th><th>Reason</th></tr>
 <tr><td>Simulator</td><td>MuJoCo 3.17, RK4, 1 ms (0.5 ms for slack cable)</td><td>contacts off; RK4 accuracy verified by convergence tests</td></tr>
-<tr><td>Drone</td><td>Skydio X2, Menagerie, 1.465 kg, 0–13 N per rotor</td><td>no real drone available; realistic inertia and rotor limits</td></tr>
+<tr><td>Drone</td><td>Skydio X2, Menagerie, 1.325 kg, 0–13 N per rotor</td><td>no real drone available; realistic inertia and rotor limits</td></tr>
 <tr><td>Cable / payload</td><td>C1 rigid massless link, 0.5 m; C2 slack-capable tendon; point mass 0.2 kg</td><td>C1 is Paper 1's model; C2 removes the "always taut" assumption</td></tr>
 <tr><td>Controller</td><td>Paper 1, Eqs. 17–38, load-position mode, flatness feed-forward</td><td>own implementation; flatness cross-checked against Udaan (1.1e-13)</td></tr>
 <tr><td>Gains</td><td>bandwidths 1.5 / 7.5 / 30 rad/s (position / cable / attitude), ζ = 0.9</td><td>F3: needs ≈ 5× separation; X2 rotors cap attitude at ≈ 30 rad/s</td></tr>
